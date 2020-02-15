@@ -1,0 +1,3 @@
+# elGatoKeyLight
+
+A very simple example written in Python to command elGatoKeyLight ON/OFF, Brightness and color temperature...
