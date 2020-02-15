@@ -12,6 +12,6 @@ lightSetup = {
 if (lightSetup.get("on", 0) == 0):
     bodyContent = '{"numberOfLights": 1,"lights": [{"on": 0}]}'
 else:
-     bodyContent = '{"numberOfLights": 1,"lights": [' + json.dumps(lightSetup) + ']}'
+    bodyContent = '{"numberOfLights": 1,"lights": [' + json.dumps(lightSetup) + ']}'
 
 response = requests.put("http://{}:9123/elgato/lights".format(elGatoIp), bodyContent)
